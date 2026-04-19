@@ -1,0 +1,19 @@
+ <div style="max-width: 400px; margin: 100px auto; text-align: center; font-family: Arial">
+  <h2>Login</h2>
+
+  <div style="margin-bottom: 10px">
+    <input [(ngModel)]="email" type="email" placeholder="E-mail" style="padding: 8px; width: 100%" />
+  </div>
+
+  <div style="margin-bottom: 10px">
+    <input [(ngModel)]="senha" type="password" placeholder="Senha" style="padding: 8px; width: 100%" />
+  </div>
+
+  <p style="color: red">{{ erro }}</p>
+
+  <button (click)="entrar()" style="padding: 10px 30px; cursor: pointer">Entrar</button>
+
+  <p style="margin-top: 20px; color: gray; font-size: 12px">
+    Use: admin@exemplo.com / 1234
+  </p>
+</div>
